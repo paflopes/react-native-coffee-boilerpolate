@@ -1,0 +1,16 @@
+{
+  "name": "AwesomeProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p ./build && coffee -m -c -o ./build ./",
+    "clean": "rm -Rf ./build"
+  },
+  "dependencies": {
+    "react": "15.2.1",
+    "react-native": "0.30.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  }
+}
