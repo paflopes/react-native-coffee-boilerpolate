@@ -1,7 +1,8 @@
-React = require 'react-native'
-{ AppRegistry, Text, StyleSheet } = React
+React = require 'react'
+ReactNative = require 'react-native'
+{ AppRegistry, Text, StyleSheet } = ReactNative
 
-Application = React.createClass
+Root = React.createClass
   render: ->
     React.createElement Text, style: styles.heading, "Hello World!"
 
@@ -11,4 +12,4 @@ styles = StyleSheet.create
     textAlign: 'center'
     marginTop: 50
 
-AppRegistry.registerComponent "Example", () -> Application
+module.exports = Root
