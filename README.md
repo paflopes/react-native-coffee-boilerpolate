@@ -5,29 +5,28 @@ This repo is meant to be as simple as possible, so you won't find any piece of [
 ### Scripts
 The scripts that transpile CoffeeScript into Javascript get all the `.coffee` files under the `app/` folder and output the `.js` files under `build/` folder with their respective mappings.
 
-- [`start`](start)
-- [`server`](server)
-- [`watch`](watch)
-- [`compile`](compile)
-- [`clean`](clean)
+- [`start`](#start)
+- [`server`](#server)
+- [`watch`](#watch)
+- [`compile`](#compile)
+- [`clean`](#clean)
 
-#### start
+#### <a name="start"></a>start
 Uses the [concurrently](https://www.npmjs.com/package/concurrently) start the *React Native* javascript server and the CoffeeScript watcher simultaneously.
 
-#### server
+#### <a name="server">server
 Starts the *React Native* server a.k.a. `react-native start`.
 
-#### watch
+#### <a name="watch">watch
 Starts the CoffeeScript watcher.
 
-#### compile
+#### <a name="compile">compile
 Compile all the `.coffee` files.
 
-#### clean
+#### <a name="clean">clean
 Removes the `build/` folder.
 
 ### Inspirations
 [Create React-Native Apps with CoffeeScript @ medium.com](https://m.raise.coffee/create-react-native-apps-with-coffeescript-dcfb4dc1671a#.2awn30sfc)
 
 [coffee-react](https://www.npmjs.com/package/coffee-react)
-
