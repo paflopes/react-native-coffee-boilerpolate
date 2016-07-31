@@ -4,7 +4,7 @@ ReactNative = require 'react-native'
 
 Root = React.createClass
   render: ->
-    React.createElement Text, style: styles.heading, "Hello World!"
+    <Text style={styles.heading}>Hello World!</Text>
 
 styles = StyleSheet.create
   heading:

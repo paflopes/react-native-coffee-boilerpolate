@@ -5,8 +5,8 @@
   "scripts": {
     "start": "concurrently --kill-others 'npm run watch' 'npm run server'",
     "server": "react-native start",
-    "watch": "npm run compile && coffee -m -w -c -o ./build ./",
-    "compile": "npm run clean && mkdir -p ./build && coffee -m -c -o ./build ./",
+    "watch": "npm run compile && cjsx -m -w -c -o ./build ./",
+    "compile": "npm run clean && mkdir -p ./build && cjsx -m -c -o ./build ./",
     "clean": "rm -Rf ./build"
   },
   "dependencies": {
@@ -14,7 +14,7 @@
     "react-native": "0.30.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.10.0",
+    "coffee-react": "^5.0.0",
     "concurrently": "^2.2.0"
   }
 }
